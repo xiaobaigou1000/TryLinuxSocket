@@ -2,3 +2,4 @@ cmake_minimum_required(VERSION 3.14)
 project(TryLinuxSocket VERSION 0.1)
 
 add_subdirectory(lesson1)
+add_subdirectory(lesson2)
