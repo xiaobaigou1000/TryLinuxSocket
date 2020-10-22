@@ -12,7 +12,7 @@ int main()
         std::cerr << "socket init failed.\n";
         return 0;
     }
-    sockaddr_in serverAddress;
+    sockaddr_in serverAddress{};
     serverAddress.sin_family = AF_INET;
     serverAddress.sin_addr.s_addr = inet_addr("127.0.0.1");
     serverAddress.sin_port = htons(9120);
