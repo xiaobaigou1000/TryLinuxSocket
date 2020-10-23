@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+project(ConnectedUDP)
+
+add_executable(ConnectedUDPServer connected_udp_server.cpp)
+add_executable(ConnectedUDPClient connected_udp_client.cpp)
