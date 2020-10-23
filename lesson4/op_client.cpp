@@ -38,6 +38,6 @@ int main()
     write(client_socket, reinterpret_cast<char *>(operations.data()), operationCount * sizeof(int));
 
     int result;
-    read(client_socket,reinterpret_cast<char*>(&result),4);
-    std::cout<<"Result from server : "<< result<<std::endl;
+    read(client_socket, reinterpret_cast<char *>(&result), 4);
+    std::cout << "Result from server : " << result << std::endl;
 }

@@ -35,17 +35,17 @@ int main()
         int currentPosition = 0;
         //better code
         //ok for known input string size
-        while(currentPosition<inputStringSize)
+        while (currentPosition < inputStringSize)
         {
-            strLength=read(client_socket,&message[currentPosition],30);
-            if(strLength==-1)
+            strLength = read(client_socket, &message[currentPosition], 30);
+            if (strLength == -1)
             {
-                std::cerr<<"read error.\n";
+                std::cerr << "read error.\n";
             }
 
-            currentPosition+=strLength;
+            currentPosition += strLength;
         }
-        message[currentPosition]=0;
+        message[currentPosition] = 0;
         std::cout << message << std::endl;
     }
 

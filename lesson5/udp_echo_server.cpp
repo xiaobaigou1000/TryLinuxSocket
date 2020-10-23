@@ -23,7 +23,7 @@ int main()
     {
         char buffer[512];
         int strLength = recvfrom(server_socket, buffer, 512, 0, reinterpret_cast<sockaddr *>(&client_addr), &client_address_length);
-        sendto(server_socket,buffer,strLength,0,reinterpret_cast<const sockaddr*>(&client_addr),client_address_length);
+        sendto(server_socket, buffer, strLength, 0, reinterpret_cast<const sockaddr *>(&client_addr), client_address_length);
     }
     close(server_socket);
 }
