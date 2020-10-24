@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+project(UnixDomainSocket)
+
+add_executable(UnixDomainSocketServer un_domain_socket_server.cpp)
+add_executable(UnixDomainSocketClient un_domain_socket_client.cpp)
