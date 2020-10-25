@@ -19,7 +19,8 @@ int main()
     {
         errorHandle("getsockopt() error.\n");
     }
-    std::cout<<"TCP socket send buffer size: "<<send_buffer_size<<std::endl;
+    std::cout << "TCP socket send buffer size: " << send_buffer_size << std::endl;
 
-    getopt_func_state=getsockopt(tcp_socket,SOL_SOCKET,SO_RCVBUF,&read_buffer_size,&optValueSize);
+    getopt_func_state = getsockopt(tcp_socket, SOL_SOCKET, SO_RCVBUF, &read_buffer_size, &optValueSize);
+    close(tcp_socket);
 }
