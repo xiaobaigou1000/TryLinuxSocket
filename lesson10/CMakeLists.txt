@@ -11,3 +11,5 @@ add_executable(OldTimeSignal signal.cpp)
 
 # sigaction
 add_executable(SignalBySigaction sigaction.cpp)
+
+add_executable(RemoveZombie remove_zombie.cpp)
