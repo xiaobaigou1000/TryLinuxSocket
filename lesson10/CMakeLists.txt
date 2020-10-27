@@ -5,3 +5,9 @@ add_executable(SimpleFork simple_fork.cpp)
 add_executable(ZombieProcess zombie_process.cpp)
 add_executable(WaitProcessReturnValue wait.cpp)
 add_executable(WaitProcessReturnValueByPID waitpid.cpp)
+
+# old time signal
+add_executable(OldTimeSignal signal.cpp)
+
+# sigaction
+add_executable(SignalBySigaction sigaction.cpp)
