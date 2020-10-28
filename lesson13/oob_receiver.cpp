@@ -8,6 +8,7 @@
 
 int main()
 {
+    //此处代码正确性未知，OOBSender无法正常发包，此处无法触发SIGURG信号
     auto urgent_message_handler = [](int signo, siginfo_t *info, void *ucontext) {
         std::vector<char> buffer(512);
         int receiver_socket = info->si_fd;
