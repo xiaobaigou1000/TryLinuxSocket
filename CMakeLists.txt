@@ -12,5 +12,6 @@ add_subdirectory(lesson8)
 add_subdirectory(lesson9)
 add_subdirectory(lesson10)
 add_subdirectory(lesson11)
+add_subdirectory(lesson12)
 
 add_subdirectory(extra_unix_domain_socket)
