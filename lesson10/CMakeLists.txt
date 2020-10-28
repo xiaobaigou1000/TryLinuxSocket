@@ -13,3 +13,5 @@ add_executable(OldTimeSignal signal.cpp)
 add_executable(SignalBySigaction sigaction.cpp)
 
 add_executable(RemoveZombie remove_zombie.cpp)
+
+add_executable(MultiProcessEcho multi_process_server.cpp)
