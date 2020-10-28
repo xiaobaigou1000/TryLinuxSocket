@@ -13,9 +13,6 @@ int main()
 
     int client_socket = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP);
 
-    int value = 1;
-    setsockopt(client_socket, SOL_SOCKET, SO_OOBINLINE, &value, sizeof(int));
-
     sockaddr_in receiver_address{};
     receiver_address.sin_family = AF_INET;
     receiver_address.sin_addr.s_addr = inet_addr("127.0.0.1");
