@@ -5,3 +5,5 @@ project(IOFunctions)
 
 add_executable(OOBSender oob_sender.cpp)
 add_executable(OOBReceiver oob_receiver.cpp)
+add_executable(PeekSend peek_send.cpp)
+add_executable(PeekReceive peek_receive.cpp)
