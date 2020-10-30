@@ -3,3 +3,6 @@ project(MulticastAndBroadcast)
 
 add_executable(MulticastSender multicast_sender.cpp)
 add_executable(MulticastReceiver multicast_receiver.cpp)
+
+add_executable(BroadcastSender broadcast_sender.cpp)
+add_executable(BroadcastReceiver broadcast_receiver.cpp)
