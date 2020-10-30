@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+project(MulticastAndBroadcast)
+
+add_executable(MulticastSender multicast_sender.cpp)
+add_executable(MulticastReceiver multicast_receiver.cpp)
