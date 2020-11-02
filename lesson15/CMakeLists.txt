@@ -3,3 +3,6 @@ project(StandardIO)
 
 add_executable(SystemCopy syscopy.cpp)
 add_executable(StandardCopy stdcopy.cpp)
+
+add_executable(FileDescriptorToFilePointer file_descriptor_to_file_pointer.cpp)
+add_executable(FilePointerToFileDescriptor file_pointer_to_file_descriptor.cpp)
