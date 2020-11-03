@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+project(SplitIOStream)
+
+add_executable(CloseFilePointerFromSameFDServer close_fp_server.cpp)
+add_executable(CloseFilePointerFromSameFDClient close_fp_client.cpp)
