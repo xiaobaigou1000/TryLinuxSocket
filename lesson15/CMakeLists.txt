@@ -6,3 +6,7 @@ add_executable(StandardCopy stdcopy.cpp)
 
 add_executable(FileDescriptorToFilePointer file_descriptor_to_file_pointer.cpp)
 add_executable(FilePointerToFileDescriptor file_pointer_to_file_descriptor.cpp)
+
+add_executable(StandardFunctionEchoServer std_echo_server.cpp)
+add_executable(StandardFunctionEchoClient std_echo_client.cpp)
+target_compile_features(StandardFunctionEchoClient PRIVATE cxx_std_17)
