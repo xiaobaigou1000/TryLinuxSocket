@@ -3,3 +3,9 @@ project(SplitIOStream)
 
 add_executable(CloseFilePointerFromSameFDServer close_fp_server.cpp)
 add_executable(CloseFilePointerFromSameFDClient close_fp_client.cpp)
+
+add_executable(TryDup try_dup.cpp)
+target_compile_features(TryDup PRIVATE cxx_std_17)
+
+add_executable(FilePointerHalfCloseWithDupServer fp_half_close_with_dup_server.cpp)
+add_executable(FilePointerHalfCloseWithDupClient fp_half_close_with_dup_client.cpp)
