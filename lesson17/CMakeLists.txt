@@ -4,3 +4,4 @@ project(TryEpoll)
 add_executable(TryEpollServer try_epoll_server.cpp)
 
 add_executable(LevelTrigger level_trigger_server.cpp)
+add_executable(EdgeTrigger edge_trigger_server.cpp)
