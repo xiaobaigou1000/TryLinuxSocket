@@ -12,3 +12,8 @@ add_executable(ThreadJoin_Pthread thread_join_pthread.cpp)
 target_link_libraries(ThreadJoin_Pthread PRIVATE Threads::Threads)
 add_executable(ThreadJoin_STL thread_join_stl.cpp)
 target_link_libraries(ThreadJoin_STL PRIVATE Threads::Threads)
+
+add_executable(WorkerThreadModel_Pthread worker_thread_pthread.cpp)
+target_link_libraries(WorkerThreadModel_Pthread PRIVATE Threads::Threads)
+add_executable(WorkerThreadModel_STL worker_thread_stl.cpp)
+target_link_libraries(WorkerThreadModel_STL PRIVATE Threads::Threads)
