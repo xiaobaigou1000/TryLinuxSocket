@@ -17,3 +17,8 @@ add_executable(WorkerThreadModel_Pthread worker_thread_pthread.cpp)
 target_link_libraries(WorkerThreadModel_Pthread PRIVATE Threads::Threads)
 add_executable(WorkerThreadModel_STL worker_thread_stl.cpp)
 target_link_libraries(WorkerThreadModel_STL PRIVATE Threads::Threads)
+
+add_executable(Mutex_Pthread mutex_pthread.cpp)
+target_link_libraries(Mutex_Pthread PRIVATE Threads::Threads)
+add_executable(Mutex_STL mutex_stl.cpp)
+target_link_libraries(Mutex_STL PRIVATE Threads::Threads)
