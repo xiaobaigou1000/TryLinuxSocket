@@ -6,7 +6,7 @@
 int main()
 {
     int source_fd = open("source.txt", O_RDONLY);
-    int destiny_fd = open("destiny.txt", O_WRONLY | O_CREAT | O_TRUNC);
+    int destiny_fd = open("destiny.txt", O_WRONLY | O_CREAT | O_TRUNC, S_IFREG);
 
     int length = 0;
     std::vector<char> buffer(512);

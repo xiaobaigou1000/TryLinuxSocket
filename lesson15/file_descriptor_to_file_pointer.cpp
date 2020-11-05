@@ -3,7 +3,7 @@
 
 int main()
 {
-    int fd = open("data.dat", O_WRONLY | O_CREAT | O_TRUNC);
+    int fd = open("data.dat", O_WRONLY | O_CREAT | O_TRUNC, S_IFREG);
     if (fd == -1)
     {
         fputs("file open error", stdout);
