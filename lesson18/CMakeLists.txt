@@ -22,3 +22,8 @@ add_executable(Mutex_Pthread mutex_pthread.cpp)
 target_link_libraries(Mutex_Pthread PRIVATE Threads::Threads)
 add_executable(Mutex_STL mutex_stl.cpp)
 target_link_libraries(Mutex_STL PRIVATE Threads::Threads)
+
+add_executable(Semaphore_Pthread semaphore_pthread.cpp)
+target_link_libraries(Semaphore_Pthread PRIVATE Threads::Threads)
+add_executable(ConditionVariable_STL condition_variable_stl.cpp)
+target_link_libraries(ConditionVariable_STL PRIVATE Threads::Threads)
