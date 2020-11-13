@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 project(MultiThread)
 
 find_package(Threads)
+find_package(spdlog)
 
 add_executable(CreateThread_Pthread create_thread_pthread.cpp)
 target_link_libraries(CreateThread_Pthread PRIVATE Threads::Threads)
@@ -28,7 +29,6 @@ target_link_libraries(Semaphore_Pthread PRIVATE Threads::Threads)
 add_executable(ConditionVariable_STL condition_variable_stl.cpp)
 target_link_libraries(ConditionVariable_STL PRIVATE Threads::Threads)
 
-find_package(spdlog)
 add_executable(ChatServer_Pthread chat_server_pthread.cpp)
 target_link_libraries(ChatServer_Pthread PRIVATE Threads::Threads spdlog::spdlog)
 add_executable(ChatClient_Pthread chat_client_pthread.cpp)
