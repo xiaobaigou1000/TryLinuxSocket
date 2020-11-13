@@ -34,3 +34,10 @@ target_link_libraries(ChatServer_Pthread PRIVATE Threads::Threads spdlog::spdlog
 add_executable(ChatClient_Pthread chat_client_pthread.cpp)
 target_link_libraries(ChatClient_Pthread PRIVATE Threads::Threads spdlog::spdlog)
 target_compile_features(ChatClient_Pthread PRIVATE cxx_std_17)
+
+add_executable(ChatServer_STL chat_server_stl.cpp)
+target_link_libraries(ChatServer_STL PRIVATE Threads::Threads spdlog::spdlog)
+target_compile_features(ChatServer_STL PRIVATE cxx_std_17)
+add_executable(ChatClient_STL chat_client_stl.cpp)
+target_link_libraries(ChatClient_STL PRIVATE Threads::Threads spdlog::spdlog)
+target_compile_features(ChatClient_STL PRIVATE cxx_std_17)
