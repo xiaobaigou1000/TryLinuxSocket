@@ -54,6 +54,7 @@ void *send_message(void *arg)
         spdlog::debug(inputStrBuffer.data());
         if (std::string_view(inputStrBuffer.data()) == "q" || std::string_view(inputStrBuffer.data()) == "Q")
         {
+            shutdown(client_socket, SHUT_WR);
             close(client_socket);
             return 0;
         }
